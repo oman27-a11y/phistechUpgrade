@@ -1,0 +1,30 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="234" y2="246" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1219" />
+      <stop offset="1" stop-color="#1B2230" />
+    </linearGradient>
+    <linearGradient id="accent" x1="54" y1="40" x2="196" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7ECF7" />
+      <stop offset="1" stop-color="#AFBDD3" />
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#bg)" />
+  <rect x="8.75" y="8.75" width="238.5" height="238.5" rx="51.25" stroke="#CFD8E9" stroke-opacity="0.34" stroke-width="1.5" />
+
+  <path d="M34 62L224 196" stroke="#E4EBF6" stroke-opacity="0.22" />
+  <path d="M42 198L190 58" stroke="#E4EBF6" stroke-opacity="0.16" />
+
+  <text x="128" y="110" text-anchor="middle" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700" letter-spacing="2">
+    PHYS
+  </text>
+  <text x="128" y="146" text-anchor="middle" fill="#F5F8FF" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700" letter-spacing="2">
+    TECH
+  </text>
+
+  <rect x="44" y="166" width="168" height="38" rx="19" fill="#B3BECE" fill-opacity="0.18" />
+  <text x="128" y="191" text-anchor="middle" fill="#DEE6F4" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="1.5">
+    UPGRADE
+  </text>
+</svg>
