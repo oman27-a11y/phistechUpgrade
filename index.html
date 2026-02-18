@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -6,84 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet" />
     <link href="./styles/globals.css" rel="stylesheet" />
     <link href="./styles/style.css" rel="stylesheet" />
-    <title>Phystech Upgrade</title>
+    <title>Физтех.Upgrade</title>
   </head>
   <body class="page">
     <div class="page__inner">
+
       <header class="glass-card hero">
-        <p class="hero__tag"># Phystech Upgrade</p>
-        <h1 class="hero__title">Phystech Upgrade</h1>
+        <p class="hero__tag"># Физтех.Upgrade</p>
+        <h1 class="hero__title">Физтех.Upgrade</h1>
         <p class="hero__lead">
           Сообщество репетиторов лучших технических вузов для академического
-          роста Вашего ребенка в естественно-научном профиле:
+          роста вашего ребенка в естественно-научном профиле
         </p>
+        <div class="hero__cta">
+          <a href="#contacts" class="btn btn--primary">Связаться с нами</a>
+        </div>
       </header>
 
       <main class="content">
+        <!-- Контакты сразу после героя — не нужно скроллить до конца -->
+        <section class="glass-card contact-cta" id="contacts" aria-label="Связаться с нами">
+          <h2 class="contact-cta__title">Записаться на консультацию</h2>
+          <p class="contact-cta__text">Напишите нам — ответим и подберём формат занятий под ваши цели.</p>
+          <div class="contact-links contact-cta__links">
+            <a href="https://max.ru" class="contact-link" aria-label="MAX">
+              <span class="contact-link__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>
+              MAX
+            </a>
+            <a href="https://t.me/PhystechUpgrade" class="contact-link" aria-label="Telegram">
+              <span class="contact-link__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+              </span>
+              Telegram
+            </a>
+            <a href="https://vk.com/club236117781" class="contact-link" aria-label="VK">
+              <span class="contact-link__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.57 4 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.49-.085.744-.576.744z"/></svg>
+              </span>
+              VK
+            </a>
+            <a href="mailto:khimitch.ai@phystech.edu" class="contact-link" aria-label="Email">
+              <span class="contact-link__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              Email
+            </a>
+          </div>
+        </section>
         <section class="glass-card intro-grid" aria-label="О нас">
           <article class="info-card">
             <h2>Кто мы?</h2>
             <p>
               Мы не просто репетиторы. Мы создаем среду единомышленников и
-              будущих лидеров, где Ваш ребенок получит не просто уроки, а
-              окружение для настоящего прорыва в естественно научном профиле..
+              будущих лидеров, где ваш ребенок получит не просто уроки, а
+              окружение для настоящего прорыва в естественно-научном профиле.
             </p>
           </article>
 
           <article class="info-card">
             <h2>Чем мы занимаемся?</h2>
-            <ul class="text-list">
-              <li>Подготовка к ЕГЭ, ОГЭ и зарубежным экзаменам</li>
-              <li>Олимпиады любого уровня и ДВИ в МГУ</li>
-              <li>Поступление в профильные школы и ведущие вузы</li>
-              <li>Академическое сопровождение студентов технически направлений</li>
-            </ul>
+            <ol class="principles-list activities-list">
+              <li>
+                <p>Подготовка к ЕГЭ, ОГЭ и зарубежным экзаменам</p>
+              </li>
+              <li>
+                <p>Олимпиады любого уровня и ДВИ в МГУ</p>
+              </li>
+              <li>
+                <p>Поступление в профильные школы и ведущие вузы</p>
+              </li>
+              <li>
+                <p>Академическое сопровождение студентов технических направлений</p>
+              </li>
+            </ol>
           </article>
 
           <article class="info-card info-card--wide">
             <h2>Почему мы?</h2>
             <p>
-              Наше комьюнити - отличные педагоги и наставники. Мы не
+              Наше комьюнити &mdash; отличные педагоги и наставники. Мы не
               натаскиваем на тесты. Мы учим понимать суть, мыслить структурно,
               решать самые сложные задачи.
             </p>
             <p class="accent-note">
-              Это и есть настоящий апгрейд - переход на новый уровень мышления.
+              Это и есть настоящий апгрейд &mdash; переход на новый уровень мышления.
             </p>
           </article>
         </section>
 
         <section class="glass-card strength" aria-label="Наша сила">
-          <h2>Наша Сила - наше сообщество</h2>
+          <h2>Наша сила &mdash; наше сообщество</h2>
           <p>
             Ваш ребёнок будет учиться у победителей олимпиад, студентов и
             выпускников ведущих технических вузов. Это наставники, которые
-            прошли уже прошли этот путь и знают, что реально требуется для
+            уже прошли этот путь и знают, что реально требуется для
             поступления и успешной учёбы.
           </p>
           <p>
-            Мы преподаем фундаментальные дисциплины: Математика, ИНформатика,
-            Физика, Химия, Биология.
+            Мы преподаем фундаментальные дисциплины: <span class="subject-list">Математика, Информатика, Физика, Химия, Биология</span>.
           </p>
           <p>
             Системное мышление вместо зубрёжки. Наши методы взяты из арсенала
             подготовки в лучших технических университетах мира. Мы учим
             разбирать сложные задачи на составляющие, видеть взаимосвязи и
-            находить решения - навык, который останется на всю жизнь,
+            находить решения &mdash; навык, который останется на всю жизнь,
             независимо от выбора карьеры.
           </p>
           <h3>География Поступления: От Москвы до Мира</h3>
           <p>
-            Топ России: МФТИ, МГУ, ВШЭ, Первый Мед, РНИМУ им. Пирогова.
+            Топ России: <span class="uni-list">МФТИ, МГУ, ВШЭ, Первый Мед, РНИМУ им. Пирогова</span>.
           </p>
-          <p>
-            Зарубежье: Разрабатываем систему подготовки к ключевым экзаменам:
-            <i>Abitur</i> (Германия), <i>SAT/ACT</i> (США), <i>A-Levels</i>
-            (Великобритания).
-          </p>
-          <p>Есть уникальная цель? Составим индивидуальный план.</p>
+          <p>Есть уникальная цель? Хотите поступать зарубеж? Составим индивидуальный план.</p>
         </section>
 
         <section class="glass-card principles" aria-label="Принципы">
@@ -94,7 +134,7 @@
               <p>
                 Работа с базой заданий и конспектов и методических материалов,
                 созданной для формирования фундамента под олимпиады и ЕГЭ. Этот
-                ресурс - надёжная основа для дальнейшего углубления знаний.
+                ресурс &mdash; надёжная основа для дальнейшего углубления знаний.
               </p>
             </li>
             <li>
@@ -114,14 +154,46 @@
             </li>
           </ol>
         </section>
+        
+        <section class="glass-card strength" aria-label="Наша сила">
+          <h2>Наши преподаватели:</h2>
+          <ul class="principles-list principles-list--unnumbered">
+            <li>Имеют стаж от пяти лет</li>
+            <li>Победители Всероссийских и международных олимпиад</li>
+            <li>Имеют опыт выступления на научных конференциях</li>
+            <li>Выпускники Московского физико-технического института &mdash; ВУЗа №1 России</li>
+          </ul>
+
+        </section>
       </main>
 
-      <footer class="glass-card contacts">
+      <footer class="glass-card contacts" aria-label="Контактная информация внизу страницы">
         <h2>Контактная информация</h2>
         <div class="contact-links">
-          <a href="#" aria-label="Telegram">Telegram</a>
-          <a href="#" aria-label="VK">VK</a>
-          <a href="#" aria-label="Email">Email</a>
+          <a href="https://max.ru" class="contact-link" aria-label="MAX">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            MAX
+          </a>
+          <a href="https://t.me/PhystechUpgrade" class="contact-link" aria-label="Telegram">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+            </span>
+            Telegram
+          </a>
+          <a href="https://vk.com/club236117781" class="contact-link" aria-label="VK">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.57 4 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.49-.085.744-.576.744z"/></svg>
+            </span>
+            VK
+          </a>
+          <a href="mailto:khimitch.ai@phystech.edu" class="contact-link" aria-label="Email">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            Email
+          </a>
         </div>
       </footer>
     </div>
