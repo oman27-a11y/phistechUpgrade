@@ -16,15 +16,16 @@
   <path d="M34 62L224 196" stroke="#E4EBF6" stroke-opacity="0.22" />
   <path d="M42 198L190 58" stroke="#E4EBF6" stroke-opacity="0.16" />
 
-  <text x="128" y="110" text-anchor="middle" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700" letter-spacing="2">
-    PHYS
-  </text>
-  <text x="128" y="146" text-anchor="middle" fill="#F5F8FF" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700" letter-spacing="2">
-    TECH
-  </text>
-
-  <rect x="44" y="166" width="168" height="38" rx="19" fill="#B3BECE" fill-opacity="0.18" />
-  <text x="128" y="191" text-anchor="middle" fill="#DEE6F4" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="1.5">
-    UPGRADE
+  <text
+    x="128"
+    y="165"
+    text-anchor="middle"
+    fill="url(#accent)"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="120"
+    font-weight="700"
+    letter-spacing="4"
+  >
+    pu
   </text>
 </svg>
