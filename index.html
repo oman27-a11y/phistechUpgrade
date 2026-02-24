@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +17,17 @@
   <body class="page">
     <div class="page__inner">
 
-      <header class="glass-card hero">
+      <header class="glass-card top-bar" aria-label="Быстрые контакты">
+        <a href="#hero" class="top-bar__logo">Физтех.Upgrade</a>
+        <nav class="top-bar__contacts" aria-label="Навигация по странице">
+          <a href="#formats" class="top-bar__link">Форматы</a>
+          <a href="#principles" class="top-bar__link">Подход</a>
+          <a href="#faq" class="top-bar__link">FAQ</a>
+          <a href="#contacts" class="top-bar__link">Связаться</a>
+        </nav>
+      </header>
+
+      <header class="glass-card hero" id="hero">
         <p class="hero__tag"># Физтех.Upgrade</p>
         <h1 class="hero__title">Физтех.Upgrade</h1>
         <p class="hero__lead">
@@ -101,6 +112,88 @@
           </article>
         </section>
 
+        <section class="glass-card formats" id="formats" aria-label="Форматы занятий">
+          <h2>Форматы занятий</h2>
+          <p class="formats__intro">
+            Подбираем формат под цели и загрузку ребёнка: от плотной индивидуальной работы до комьюнити с регулярной поддержкой.
+          </p>
+          <div class="formats__grid">
+            <article class="info-card formats__item">
+              <h3>Индивидуальные занятия</h3>
+              <p>Максимальная глубина и гибкость. Полностью подстраиваемся под расписание и темп ученика.</p>
+              <ul class="text-list">
+                <li>1–2 занятия в неделю</li>
+                <li>Разбор домашних и экзаменационных вариантов</li>
+                <li>Фокус на пробелах и сильных сторонах</li>
+              </ul>
+            </article>
+            <article class="info-card formats__item">
+              <h3>Малые группы</h3>
+              <p>Эффект команды и здоровая конкуренция при сохранении внимания к каждому ученику.</p>
+              <ul class="text-list">
+                <li>До 6 человек в группе</li>
+                <li>Общие разборы и индивидуальные комментарии</li>
+                <li>Регулярные мини-олимпиады внутри потока</li>
+              </ul>
+            </article>
+            <article class="info-card formats__item">
+              <h3>Олимпиадные треки</h3>
+              <p>Углублённая подготовка к сложным соревнованиям и ДВИ с опорой на опыт наших преподавателей.</p>
+              <ul class="text-list">
+                <li>Авторские подборки задач</li>
+                <li>Разбор нестандартных идей решений</li>
+                <li>Индивидуальная стратегия под конкретные олимпиады</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="glass-card roadmap" aria-label="Как всё устроено">
+          <h2>Как проходит путь ученика</h2>
+          <p class="roadmap__intro">
+            Не бросаем на полпути: сопровождаем от первой встречи до поступления, прозрачно показывая прогресс.
+          </p>
+          <ol class="principles-list roadmap__list">
+            <li>
+              <h3>Диагностика и постановка целей</h3>
+              <p>Тест-драйв занятий и срез текущего уровня. Совместно формулируем конкретные, измеримые цели и сроки.</p>
+            </li>
+            <li>
+              <h3>Индивидуальный маршрут</h3>
+              <p>Составляем учебный план: предметы, нагрузка, ключевые контрольные точки и промежуточные цели.</p>
+            </li>
+            <li>
+              <h3>Системная работа</h3>
+              <p>Регулярные занятия, домашние задания, разбор сложных задач и постоянная обратная связь от наставника.</p>
+            </li>
+            <li>
+              <h3>Финишная подготовка и поступление</h3>
+              <p>Оттачиваем экзаменационную стратегию, разбираем реальные варианты и готовим к поступлению в выбранные вузы.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="glass-card stats" aria-label="Результаты в цифрах">
+          <h2>Результаты в цифрах</h2>
+          <p class="stats__intro">
+            Мы внимательно относимся к каждому ученику, поэтому можем говорить о результатах уверенно.
+          </p>
+          <div class="stats__grid">
+            <div class="stat-card">
+              <div class="stat-card__value">90%+</div>
+              <p class="stat-card__label">учеников выходят на целевые баллы ЕГЭ</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">70%+</div>
+              <p class="stat-card__label">поступают в топ‑вузы России и зарубежья</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">5 лет</div>
+              <p class="stat-card__label">средний педагогический стаж наших наставников</p>
+            </div>
+          </div>
+        </section>
+
         <section class="glass-card strength" aria-label="Наша сила">
           <h2>Наша сила &mdash; наше сообщество</h2>
           <p>
@@ -126,7 +219,7 @@
           <p>Есть уникальная цель? Хотите поступать зарубеж? Составим индивидуальный план.</p>
         </section>
 
-        <section class="glass-card principles" aria-label="Принципы">
+        <section class="glass-card principles" id="principles" aria-label="Принципы">
           <h2>Три принципа нашей работы:</h2>
           <ol class="principles-list">
             <li>
@@ -171,6 +264,24 @@
             Все выпускники прошлого набора успешно поступили в ведущие вузы России и зарубежья.
             Для нас это главный показатель качества: каждый ученик дошёл до своей цели.
           </p>
+        </section>
+
+        <section class="glass-card faq" id="faq" aria-label="Частые вопросы">
+          <h2>Частые вопросы</h2>
+          <div class="faq__items">
+            <details class="faq__item">
+              <summary>С какого уровня можно к вам прийти?</summary>
+              <p>Мы работаем и с сильными ребятами, и с теми, у кого есть пробелы. Важно лишь желание расти и готовность регулярно заниматься.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Можно ли совмещать занятия с профильной школой и кружками?</summary>
+              <p>Да. Мы подстраиваем нагрузку и расписание под реальную жизнь ученика, чтобы не выгорать и двигаться в комфортном темпе.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Как понять, подойдёт ли вам наш формат?</summary>
+              <p>Оставьте заявку на консультацию — проведём пробное занятие, оценим уровень и предложим понятный план действий.</p>
+            </details>
+          </div>
         </section>
       </main>
 
