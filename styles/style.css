@@ -1,19 +1,22 @@
 :root {
-  --bg-main: #0c0f14;
-  --bg-secondary: #141922;
-  --line-color: rgba(224, 230, 240, 0.28);
-  --glass-fill: rgba(20, 26, 36, 0.72);
-  --glass-border: rgba(148, 163, 184, 0.28);
-  --glass-glow: rgba(56, 189, 248, 0.08);
-  --text-main: #f1f5f9;
-  --text-soft: #cbd5e1;
-  --accent: #94a3b8;
-  --accent-strong: #e2e8f0;
-  --accent-primary: #38bdf8;
-  --accent-secondary: #818cf8;
-  --accent-tertiary: #f472b6;
-  --accent-cta-from: #38bdf8;
-  --accent-cta-to: #818cf8;
+  --bg-main: #07080a;
+  --bg-secondary: #0e1014;
+  --line-color: rgb(244 241 234 / 0.16);
+  --glass-fill: rgb(12 14 18 / 0.72);
+  --glass-border: rgb(212 175 55 / 0.18);
+  --glass-glow: rgb(212 175 55 / 0.1);
+  --text-main: #f4f1ea;
+  --text-soft: #bdb6aa;
+  --accent: #9e9687;
+  --accent-strong: #fbf6ea;
+  --accent-primary: #d4af37;
+  --accent-primary-rgb: 212 175 55;
+  --accent-secondary: #0f766e;
+  --accent-secondary-rgb: 15 118 110;
+  --accent-tertiary: #c08a4b;
+  --accent-tertiary-rgb: 192 138 75;
+  --accent-cta-from: #d4af37;
+  --accent-cta-to: #c08a4b;
   --shadow: rgba(2, 6, 23, 0.6);
   --radius-lg: 24px;
   --radius-md: 16px;
@@ -30,10 +33,10 @@
   font-size: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
   line-height: 1.6;
   background:
-    radial-gradient(ellipse 80% 50% at 20% 10%, rgba(56, 189, 248, 0.18), transparent 50%),
-    radial-gradient(ellipse 70% 40% at 85% 15%, rgba(129, 140, 248, 0.14), transparent 45%),
-    radial-gradient(ellipse 60% 50% at 50% 95%, rgba(56, 189, 248, 0.08), transparent 45%),
-    linear-gradient(165deg, var(--bg-main) 0%, var(--bg-secondary) 50%, #0f1319 100%);
+    radial-gradient(ellipse 80% 50% at 22% 10%, rgb(var(--accent-primary-rgb) / 0.1), transparent 55%),
+    radial-gradient(ellipse 70% 40% at 86% 14%, rgb(var(--accent-secondary-rgb) / 0.09), transparent 52%),
+    radial-gradient(ellipse 60% 50% at 52% 95%, rgb(var(--accent-primary-rgb) / 0.06), transparent 52%),
+    linear-gradient(165deg, var(--bg-main) 0%, var(--bg-secondary) 55%, #0a0b0d 100%);
   position: relative;
   overflow-x: hidden;
   min-block-size: 100dvh;
@@ -58,8 +61,8 @@
 
 .page::after {
   background:
-    radial-gradient(circle at 72% 72%, rgba(56, 189, 248, 0.06), transparent 28%),
-    radial-gradient(circle at 30% 80%, rgba(129, 140, 248, 0.06), transparent 24%);
+    radial-gradient(circle at 72% 72%, rgb(var(--accent-primary-rgb) / 0.05), transparent 28%),
+    radial-gradient(circle at 30% 80%, rgb(var(--accent-secondary-rgb) / 0.05), transparent 24%);
 }
 
 .page__inner {
@@ -99,7 +102,7 @@
 
 .top-bar__logo:hover {
   color: var(--accent-primary);
-  text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  text-shadow: 0 0 22px rgb(var(--accent-primary-rgb) / 0.35);
 }
 
 .top-bar__contacts {
@@ -121,9 +124,9 @@
 
 .top-bar__link:hover {
   border-color: var(--accent-primary);
-  background: rgba(56, 189, 248, 0.12);
+  background: rgb(var(--accent-primary-rgb) / 0.1);
   color: var(--text-main);
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 22px rgb(var(--accent-primary-rgb) / 0.12);
 }
 
 .top-bar__link:focus-visible {
@@ -235,14 +238,14 @@
   color: #0f172a;
   font-weight: 700;
   box-shadow:
-    0 4px 20px -4px rgba(56, 189, 248, 0.5),
+    0 4px 22px -6px rgb(var(--accent-primary-rgb) / 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.2) inset;
 }
 
 .btn--primary:hover {
-  background: linear-gradient(135deg, #5dd4ff 0%, #a5b4fc 100%);
+  background: linear-gradient(135deg, #f0d27a 0%, #d5ad63 100%);
   box-shadow:
-    0 8px 28px -4px rgba(56, 189, 248, 0.55),
+    0 10px 30px -10px rgb(var(--accent-primary-rgb) / 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.25) inset;
   transform: translateY(-2px);
 }
@@ -410,8 +413,8 @@
 }
 
 .info-card:hover {
-  border-color: rgba(56, 189, 248, 0.35);
-  box-shadow: 0 0 24px -8px rgba(56, 189, 248, 0.2);
+  border-color: rgb(var(--accent-primary-rgb) / 0.28);
+  box-shadow: 0 0 26px -10px rgb(var(--accent-primary-rgb) / 0.14);
 }
 
 .info-card h2,
@@ -458,35 +461,39 @@
   block-size: 8px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 12px rgb(var(--accent-primary-rgb) / 0.28);
 }
 
 .subject-list {
   color: var(--accent-primary);
   font-weight: 700;
-  text-shadow: 0 0 24px rgba(56, 189, 248, 0.4);
+  text-shadow: 0 0 26px rgb(var(--accent-primary-rgb) / 0.28);
 }
 
 .uni-list {
   color: var(--accent-secondary);
   font-weight: 700;
-  text-shadow: 0 0 24px rgba(129, 140, 248, 0.45);
+  text-shadow: 0 0 26px rgb(var(--accent-secondary-rgb) / 0.28);
 }
 
 .exam-list {
   color: var(--accent-tertiary);
   font-weight: 700;
   font-style: normal;
-  text-shadow: 0 0 24px rgba(244, 114, 182, 0.45);
+  text-shadow: 0 0 26px rgb(var(--accent-tertiary-rgb) / 0.28);
 }
 
 .accent-note {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.25), rgba(129, 140, 248, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgb(var(--accent-primary-rgb) / 0.22),
+    rgb(var(--accent-secondary-rgb) / 0.16)
+  );
   color: var(--text-main);
   padding: 12px 16px;
   border-radius: var(--radius-sm);
   font-weight: 700;
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  border: 1px solid rgb(var(--accent-primary-rgb) / 0.28);
 }
 
 .strength {
@@ -527,8 +534,8 @@
 }
 
 .principles-list li:hover {
-  border-color: rgba(129, 140, 248, 0.35);
-  box-shadow: 0 0 24px -8px rgba(129, 140, 248, 0.2);
+  border-color: rgb(var(--accent-secondary-rgb) / 0.26);
+  box-shadow: 0 0 26px -10px rgb(var(--accent-secondary-rgb) / 0.14);
 }
 
 .principles-list li::before {
@@ -545,7 +552,7 @@
   font-weight: 800;
   display: grid;
   place-items: center;
-  box-shadow: 0 2px 12px rgba(56, 189, 248, 0.35);
+  box-shadow: 0 2px 14px rgb(var(--accent-primary-rgb) / 0.22);
 }
 
 .principles-list--unnumbered li::before {
@@ -596,8 +603,8 @@
 
 .contact-links a:hover {
   border-color: var(--accent-primary);
-  background: rgba(56, 189, 248, 0.14);
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+  background: rgb(var(--accent-primary-rgb) / 0.1);
+  box-shadow: 0 0 22px rgb(var(--accent-primary-rgb) / 0.12);
 }
 
 .contact-links a:focus-visible {
